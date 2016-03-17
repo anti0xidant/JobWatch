@@ -1,0 +1,74 @@
+Database Tables |
+============================================================================
+v.1 (3/17/2016, 11:13 AM)
+Notes:
+-Type (string) will be replaced with appropriate SQL type in implementation.
+-Language table includes programming languages and other tools
+=============================================================================
+Stand Alone Tables (7)
+
+Jobs:
+-JobID (int)
+-CompanyID (int)
+-Title (string)
+-TypeID (int)
+-URL (string)
+-LocationID (int)
+-Description (string)
+-Date Listed (datetime)
+-Date Applied (datetime)
+-IsActive (bool)
+-IntermediatePhaseID (int)
+-InterviewCount (int)
+-OfferPhaseID (int)
+-OfferedSalary (decimal)
+-RejectionStatus (bool)
+
+Company:
+-CompanyID (int)
+-CompanyName (string)
+
+Type:
+-TypeID (int)
+-Type: (string)
+	0. FrontEnd
+	1. Middle
+	2. Database
+	3. FullStack
+
+Location:
+-LocationID (int)
+-City (string)
+-State (string)
+
+IntermediatePhase:
+-IntermediatePhaseID (int)
+-IntermediatePhase: (string)
+	0. AwaitingCallback
+	1. InInterviewPhase
+
+OfferPhase:
+-OfferPhaseID (int)
+-OfferPhase: (string)
+	0. NotYetReached
+	1. OfferButDeciding
+	2. OfferButPass
+	3. AcceptedOffer
+
+Language:
+-LanguageID
+-Language:
+	0. C#
+	1. Java
+	2. Python
+	3. Javascript
+	4. JQuerry
+	5. AngularJS
+	6. SQL
+====================================
+Cross Tables (1)
+
+Jobs x Languages:
+-JobsxLanguagesID
+-JobsID
+-LanguagesID
