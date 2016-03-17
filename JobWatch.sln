@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobWatch", "JobWatch\JobWatch.csproj", "{526A9762-1E72-429A-804A-773215B1C6C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobWatchBLL", "JobWatchBLL\JobWatchBLL.csproj", "{CDC40329-62D1-44F7-B462-3B399E3DE90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobWatchData", "JobWatchData\JobWatchData.csproj", "{42FECF5E-3C1E-46D9-AADA-50106FF7BAD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{526A9762-1E72-429A-804A-773215B1C6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{526A9762-1E72-429A-804A-773215B1C6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{526A9762-1E72-429A-804A-773215B1C6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC40329-62D1-44F7-B462-3B399E3DE90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC40329-62D1-44F7-B462-3B399E3DE90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC40329-62D1-44F7-B462-3B399E3DE90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC40329-62D1-44F7-B462-3B399E3DE90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FECF5E-3C1E-46D9-AADA-50106FF7BAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FECF5E-3C1E-46D9-AADA-50106FF7BAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FECF5E-3C1E-46D9-AADA-50106FF7BAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FECF5E-3C1E-46D9-AADA-50106FF7BAD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
