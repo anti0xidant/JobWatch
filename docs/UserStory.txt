@@ -1,0 +1,12 @@
+SPA User Story (from top to bottom of page):
+1) Simple Greeting
+2) Row of basic statistics
+	a) # of jobs Active
+	b) # of jobs applied this week.
+	c) # of jobs left to apply to meet target.
+3) Row of management tools
+	a) Add job
+3) Row of Database View
+	a) Table displaying jobs
+	b) On-click: Modal showing detailed description
+	

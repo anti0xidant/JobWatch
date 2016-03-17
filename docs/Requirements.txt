@@ -1,0 +1,32 @@
+Requirements:
+2/26/2016:
+-Add jobs.
+	Detail(s):
+	-Company
+	-Title
+	-URL
+	-City
+	-State
+	-Programing Languages
+	-Description
+-Remove jobs.
+-Edit jobs.
+-Track status of applied status.
+	Status(es):
+	-No initial response yet
+	-In interview phase. Show stages completed.
+	-Rejected.
+	-Offered.
+-Main page give statistics:
+	Must(s):
+	-# of Jobs Active
+	-# of Jobs Applied this week.
+	-# of Jobs with no response 
+	-# of jobs breakdown by city
+	-# of jobs breakdown by language
+	Nice-to-have(s):
+	-Graph displaying jobs applied by day.
+	-Warning colors indicating jobs applied:
+		-Green: met weekly target number
+		-Yellow: more than halfway to target
+		-Red: less than halfway to target
