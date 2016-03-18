@@ -33,6 +33,12 @@ CompanyName		nvar(30)		not null,
 CompanyUrl		nvarchar(2083)	
 )
 
+CREATE TABLE Type
+(
+TypeID			int			not null	PRIMARY KEY,
+Type			nchar(20)		not null	
+)
+
 CREATE TABLE Location
 (
 LocationID 		int 			not null	PRIMARY KEY,

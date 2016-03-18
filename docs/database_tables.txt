@@ -1,6 +1,6 @@
 Database Tables |
 ============================================================================
-v.1 (3/17/2016, 11:13 AM)
+Modified: 3/17/2016, 11:13 AM
 Notes:
 -Type (string) will be replaced with appropriate SQL type in implementation.
 -Language table includes programming languages and other tools
