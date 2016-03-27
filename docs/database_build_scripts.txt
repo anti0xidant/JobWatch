@@ -1,5 +1,6 @@
 Database Scripts
-Modified: 3/18/2016 3:45 PM
+Created: 	3/18/2016 3:45 	PM
+Last Modified:	3/23/2016 12:27	PM
 ====================================
 USE master
 CREATE DATABASE JobWatch
@@ -7,17 +8,18 @@ GO
 
 USE JobWatch
 
-CREATE TABLE Jobs
+CREATE TABLE Job
 (
 JobID 			int 			not null	 PRIMARY KEY,
 CompanyID 		int 			not null,
-Title 			nvar(30)		not null,
-TypeID 			int not null,
+Title 			varchar(30)		not null,
+TypeID 			int 			not null,
 Url 			nvarchar(2083),
 LocationID 		int 			not null,
 Description 		nvarchar(4000),
 DateListed 		datetime,
 DateApplied 		datetime 		not null,
+IsRecruiter		bit			not null,
 IsActive 		bit 			not null,
 IntermediatePhaseID 	int 			not null,
 InterviewCount 		int 			not null,
@@ -29,7 +31,7 @@ RejectionStatus 	bit 			not null
 CREATE TABLE Company
 (
 CompanyID		int			not null	PRIMARY KEY,
-CompanyName		nvar(30)		not null,
+CompanyName		varchar(30)		not null,
 CompanyUrl		nvarchar(2083)	
 )
 
@@ -42,29 +44,29 @@ Type			nchar(20)		not null
 CREATE TABLE Location
 (
 LocationID 		int 			not null	PRIMARY KEY,
-City			nchar(30)		not null,
-State			nchar(15)		not null
+City			char(30)		not null,
+State			char(15)		not null
 )
 
 CREATE TABLE IntermediatePhase
 (
 IntermediatePhaseID	int			not null	PRIMARY KEY,
-IntermediatePhase	nchar(25)		not null
+IntermediatePhase	varchar(25)		not null
 )
 
 CREATE TABLE OfferPhase
 (
 OfferPhaseID		int			not null 	PRIMARY KEY,
-OfferPhase		nchar(25)		not null,
+OfferPhase		varchar(25)		not null,
 )
 
 CREATE TABLE Language
 (
 LanguageID		int			not null	PRIMARY KEY,
-Language		nchar(20)		not null
+Language		varchar(20)		not null
 )
 
-CREATE TABLE JobsxLanguage
+CREATE TABLE JobxLanguage
 (
 JobID			int			not null	FOREIGN KEY,
 LanguageID		int	 		not null	FOREIGN KEY
