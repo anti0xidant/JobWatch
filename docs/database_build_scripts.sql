@@ -3,6 +3,24 @@ USE master
 CREATE DATABASE JobWatch
 GO
 --*************************
+--****Destroy Existing Tables****
+USE JobWatch
+GO
+
+DROP TABLE Company
+DROP TABLE Recruiter
+DROP TABLE Type
+DROP TABLE States
+DROP TABLE Location
+DROP TABLE IntermediatePhase
+DROP TABLE OfferPhase
+DROP TABLE Language
+DROP TABLE Jobs
+DROP TABLE JobsxLanguage
+GO
+--*******************************
+
+--****Build Tables***************
 USE JobWatch
 
 CREATE TABLE Company
@@ -95,3 +113,5 @@ LanguageID				int					not null,
 CONSTRAINT FK_JobID			 FOREIGN KEY (JobID)		REFERENCES	Jobs		(JobID),
 CONSTRAINT FK_LanguageID	 FOREIGN KEY (LanguageID)	REFERENCES	Language	(LanguageID)
 )
+
+--*******************************
