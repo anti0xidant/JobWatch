@@ -27,12 +27,21 @@ TypeID					int					IDENTITY(1,1)	PRIMARY KEY,
 Type					nchar(20)			not null
 )
 
+CREATE TABLE States
+(
+StateAbrv				char(2)				not null		PRIMARY KEY,
+State					varchar(22)			not null
+)
+
 CREATE TABLE Location
 (
 LocationID				int					IDENTITY(1,1)	PRIMARY KEY,
-City					varchar(30)			not null,
-State					char(2)				not null
+City					varchar(50)			not null,
+StateAbrv				char(2)				not null,
+
+CONSTRAINT FK_StateAbrv				FOREIGN KEY (StateAbrv)				REFERENCES	States				(StateAbrv)
 )
+
 
 CREATE TABLE IntermediatePhase
 (
