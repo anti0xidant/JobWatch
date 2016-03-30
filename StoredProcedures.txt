@@ -1,0 +1,156 @@
+======================
+Stored Procedures for:
+JobWatch
+======================
+CREATE 	-	3
+READ 	- 	2
+UPDATE 	- 	3
+DELETE 	-	1
+======================
+CREATE
+
+(1) AddJob
+	input(s):
+
+		CompanyID
+		RecruiterID
+		Title
+		Url
+		LocationID
+		Description
+		DateListed
+		DateApplied
+		IsRecruiter
+	internal set:
+
+		IsActive
+		IntermediatePhaseID
+		InterviewCount
+		OfferPhaseID
+		OfferedSalary
+		RejectionStatus
+
+(2) AddCompany
+	input(s):
+
+		CompanyName
+		CompanyUrl
+
+	output:
+
+		CompanyID
+
+(3) AddRecruiter
+	input(s):
+
+		RecruiterCompanyName
+		RecruiterName
+		RecruiterNumber
+		RecruiterEmail
+
+	output:
+
+		RecruiterID
+
+======================
+READ
+
+(1) GetJobByID
+	input(s):
+
+		JobID
+
+	output:
+
+		CompanyName
+		CompanyUrl
+		Title
+		Url
+		City
+		StateAbrv
+		Description
+		DateListed
+		IsRecruiter
+		IsActive
+		IntermediatePhase
+		InterviewCount
+		OfferPhase
+		OfferedSalary
+		RejectionStatus
+
+(2) GetAllActiveJobs 
+	
+	output:
+
+		JobID
+		CompanyName
+		CompanyUrl
+		Title
+		Url
+		City
+		StateAbrv
+		Description
+		DateListed
+		IsRecruiter
+		IsActive
+		IntermediatePhase
+		InterviewCount
+		OfferPhase
+		OfferedSalary
+		RejectionStatus
+
+======================
+UPDATE
+
+(1) EditJob
+	input(s):
+
+		JobID
+		CompanyName
+		CompanyUrl
+		Title
+		Url
+		City
+		StateAbrv
+		Description
+		DateListed
+		IsRecruiter
+		IsActive
+		IntermediatePhase
+		InterviewCount
+		OfferPhase
+		OfferedSalary
+		RejectionStatus
+
+(2) MarkAsRejected
+	input(s):
+
+		JobID
+
+	internal set(s):
+
+		IsActive
+		RejectionStatus
+
+(3) BumpInterviewCount
+
+	input(s):
+
+		JobId
+
+	internal set(s):
+
+		InterviewCount
+
+======================
+DELETE
+
+(1) RemoveJob
+	input(s):
+
+		JobId
+
+	internal set(s):
+
+		IsActive
+		

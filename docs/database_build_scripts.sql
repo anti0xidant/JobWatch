@@ -6,17 +6,16 @@ GO
 --****Destroy Existing Tables****
 USE JobWatch
 GO
-
-DROP TABLE Company
-DROP TABLE Recruiter
-DROP TABLE Type
-DROP TABLE States
-DROP TABLE Location
-DROP TABLE IntermediatePhase
-DROP TABLE OfferPhase
-DROP TABLE Language
-DROP TABLE Jobs
 DROP TABLE JobsxLanguage
+DROP TABLE Jobs
+DROP TABLE Language
+DROP TABLE OfferPhase
+DROP TABLE IntermediatePhase
+DROP TABLE Location
+DROP TABLE States
+DROP TABLE Type
+DROP TABLE Recruiter
+DROP TABLE Company
 GO
 --*******************************
 
