@@ -2,7 +2,7 @@
 Stored Procedures for:
 JobWatch
 ======================
-CREATE 	-	3
+CREATE 	-	4
 READ 	- 	2
 UPDATE 	- 	5
 DELETE 	-	1
@@ -31,7 +31,13 @@ CREATE
 		OfferedSalary
 		RejectionStatus
 
-(2) AddCompany
+(2) AddJobLanguages
+	input(s):
+
+		JobID
+		LanguageID
+
+(3) AddCompany
 	input(s):
 
 		CompanyName
@@ -41,7 +47,7 @@ CREATE
 
 		CompanyID
 
-(3) AddRecruiter
+(4) AddRecruiter
 	input(s):
 
 		RecruiterCompanyName
@@ -66,7 +72,7 @@ READ
 		CompanyName
 		CompanyUrl
 		Title
-		TypeDescription
+		Type
 		Url
 		City
 		StateCode
@@ -90,7 +96,7 @@ READ
 		CompanyName
 		CompanyUrl
 		Title
-		TypeDescription
+		Type
 		Url
 		City
 		StateCode

@@ -75,7 +75,7 @@ Title					varchar(25)			not null,
 CREATE TABLE Language
 (
 LanguageID				int					IDENTITY(1,1)	PRIMARY KEY,
-Language				varchar(20)			not null
+Name					varchar(20)			not null
 )
 
 CREATE TABLE Jobs
