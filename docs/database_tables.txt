@@ -13,8 +13,8 @@ Jobs:
 -Title (string)
 -TypeID (int)
 -URL (string)
--LocationID (int)
--Description (string)
+-CityID (int)
+-Summary (string)
 -Date Listed (datetime)
 -Date Applied (datetime)
 -IsActive (bool)
@@ -30,16 +30,20 @@ Company:
 
 Type:
 -TypeID (int)
--Type: (string)
+-TypeDescription (string)
 	0. FrontEnd
 	1. Middle
 	2. Database
 	3. FullStack
 
-Location:
--LocationID (int)
+Cities
+-CityID(int)
 -City (string)
--State (string)
+-StateCode (string)
+
+States
+-StateCode (char)
+-State (varchar)
 
 IntermediatePhase:
 -IntermediatePhaseID (int)
@@ -57,18 +61,17 @@ OfferPhase:
 
 Language:
 -LanguageID
--Language:
+-Name:
 	0. C#
 	1. Java
 	2. Python
-	3. Javascript
-	4. JQuerry
+	3. JavaScript
+	4. jQuery
 	5. AngularJS
 	6. SQL
 ====================================
 Cross Tables (1)
 
 Jobs x Languages:
--JobsxLanguagesID
 -JobsID
 -LanguagesID
