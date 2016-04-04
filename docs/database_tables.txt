@@ -61,18 +61,17 @@ OfferPhase:
 
 Language:
 -LanguageID
--Language:
+-Name:
 	0. C#
 	1. Java
 	2. Python
-	3. Javascript
-	4. JQuerry
+	3. JavaScript
+	4. jQuery
 	5. AngularJS
 	6. SQL
 ====================================
 Cross Tables (1)
 
 Jobs x Languages:
--JobsxLanguagesID
 -JobsID
 -LanguagesID

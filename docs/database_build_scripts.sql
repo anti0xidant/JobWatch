@@ -109,7 +109,7 @@ CONSTRAINT FK_OfferPhaseID			FOREIGN KEY (OfferPhaseID)			REFERENCES	OfferPhase	
 CREATE TABLE JobxLanguage
 (
 JobID					int					not null,
-LanguageID				int					not null,
+LanguageID				int					not null,	-- (0)-C#, (1)-Java, (2)-Python, (3)-JavaScript, (4)-jQuery, (5)-AngularJS, (6)-SQL
 
 CONSTRAINT FK_JobID			 FOREIGN KEY (JobID)		REFERENCES	Jobs		(JobID),
 CONSTRAINT FK_LanguageID	 FOREIGN KEY (LanguageID)	REFERENCES	Language	(LanguageID)
