@@ -44,7 +44,7 @@ TypeID					int					IDENTITY(1,1)	PRIMARY KEY,
 Name					nchar(20)			not null
 )
 
-CREATE TABLE States
+CREATE TABLE Statesgit 
 (
 State					varchar(22)			not null,
 StateCode				char(2)				not null		PRIMARY KEY
@@ -100,7 +100,7 @@ RejectionStatus			bit,							-- (0)-Not rejected, (1)-Rejected
 
 CONSTRAINT FK_CompanyID				FOREIGN KEY (CompanyID)				REFERENCES	Company				(CompanyID),
 CONSTRAINT FK_RecruiterID			FOREIGN KEY (RecruiterID)			REFERENCES	Recruiter			(RecruiterID),
-CONSTRAINT FK_TypeID				FOREIGN KEY (TypeID)				REFERENCES	Type				(TypeID),
+CONSTRAINT FK_TypeID				FOREIGN KEY (TypeID)				REFERENCES	JobType				(TypeID),
 CONSTRAINT FK_LocationID			FOREIGN KEY (CityID)				REFERENCES	Cities				(CityID),
 CONSTRAINT FK_IntermediatePhaseID	FOREIGN KEY (IntermediatePhaseID)	REFERENCES	IntermediatePhase	(IntermediatePhaseID),
 CONSTRAINT FK_OfferPhaseID			FOREIGN KEY (OfferPhaseID)			REFERENCES	OfferPhase			(OfferPhaseID)

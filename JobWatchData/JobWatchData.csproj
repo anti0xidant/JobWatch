@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\Settings.cs" />
+    <Compile Include="JobWatchDB.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\IntermediatePhase.cs" />
     <Compile Include="Models\Job.cs" />
@@ -50,9 +52,7 @@
     <Compile Include="Models\Recruiter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
