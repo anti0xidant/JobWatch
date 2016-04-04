@@ -28,9 +28,9 @@ Company:
 -CompanyID (int)
 -CompanyName (string)
 
-Type:
+JobType:
 -TypeID (int)
--TypeDescription (string)
+-Name(string)
 	0. FrontEnd
 	1. Middle
 	2. Database

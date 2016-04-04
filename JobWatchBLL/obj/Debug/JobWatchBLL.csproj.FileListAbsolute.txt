@@ -1,0 +1,5 @@
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\JobWatch\JobWatchBLL\bin\Debug\JobWatchBLL.dll
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\JobWatch\JobWatchBLL\bin\Debug\JobWatchBLL.pdb
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\JobWatch\JobWatchBLL\obj\Debug\JobWatchBLL.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\JobWatch\JobWatchBLL\obj\Debug\JobWatchBLL.dll
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\JobWatch\JobWatchBLL\obj\Debug\JobWatchBLL.pdb

@@ -38,10 +38,10 @@ RecruiterNumber			varchar(10),
 RecruiterEmail			varchar(30)
 )
 
-CREATE TABLE Type
+CREATE TABLE JobType
 (
 TypeID					int					IDENTITY(1,1)	PRIMARY KEY,
-TypeDescription			nchar(20)			not null
+Name					nchar(20)			not null
 )
 
 CREATE TABLE States
