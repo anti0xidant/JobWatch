@@ -41,7 +41,7 @@ RecruiterEmail			varchar(30)
 CREATE TABLE Type
 (
 TypeID					int					IDENTITY(1,1)	PRIMARY KEY,
-Type					nchar(20)			not null
+TypeDescription			nchar(20)			not null
 )
 
 CREATE TABLE States

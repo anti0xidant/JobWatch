@@ -30,7 +30,7 @@ Company:
 
 Type:
 -TypeID (int)
--Type: (string)
+-TypeDescription (string)
 	0. FrontEnd
 	1. Middle
 	2. Database
