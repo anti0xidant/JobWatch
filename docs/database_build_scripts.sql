@@ -63,13 +63,13 @@ CONSTRAINT FK_StateAbrv				FOREIGN KEY (StateCode)				REFERENCES	States				(Stat
 CREATE TABLE IntermediatePhase
 (
 IntermediatePhaseID		int					IDENTITY(1,1)	PRIMARY KEY,
-IntermediatePhase		varchar(25)			not null
+Title					varchar(25)			not null
 )
 
 CREATE TABLE OfferPhase
 (
 OfferPhaseID			int					IDENTITY(1,1)	PRIMARY KEY,
-OfferPhase				varchar(25)			not null,
+Title					varchar(25)			not null,
 )
 
 CREATE TABLE Language
@@ -90,7 +90,7 @@ Summary					nvarchar(4000),
 DateListed				datetime,
 DateApplied				datetime			not null,
 IsRecruiter				bit					not null,	-- (0)-Not recruiter job, (1)-Is recruiter job
-IsActive				bit					not null,	-- (0)-Not active, (1)-Is active
+IsActive				bit					not null,	-- (0)-Deleted, (1)-Not deleted
 IntermediatePhaseID		int					not null,	-- (0)-Awaiting Callback, (1)-Interview Phase
 InterviewCount			int					not null,
 OfferPhaseID			int					not null,	-- (0)-Not yet reached, (1)-Offered but deciding, (2)-Offered but pass, (3)-Accepted offer 

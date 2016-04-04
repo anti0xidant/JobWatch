@@ -67,14 +67,17 @@ READ
 		Title
 		Url
 		City
-		StateAbrv
-		Description
+		StateCode
+		State
+		Summary
 		DateListed
 		IsRecruiter
 		IsActive
-		IntermediatePhase
+		IntermediatePhaseID
+		Title(IntermediatePhase)
 		InterviewCount
-		OfferPhase
+		OfferPhaseID
+		Title(OfferPhase)
 		OfferedSalary
 		RejectionStatus
 
@@ -82,20 +85,22 @@ READ
 	
 	output:
 
-		JobID
 		CompanyName
 		CompanyUrl
 		Title
 		Url
 		City
-		StateAbrv
-		Description
+		StateCode
+		State
+		Summary
 		DateListed
 		IsRecruiter
 		IsActive
-		IntermediatePhase
+		IntermediatePhaseID
+		Title(IntermediatePhase)
 		InterviewCount
-		OfferPhase
+		OfferPhaseID
+		Title(OfferPhase)
 		OfferedSalary
 		RejectionStatus
 
@@ -111,14 +116,16 @@ UPDATE
 		Title
 		Url
 		City
-		StateAbrv
-		Description
+		StateCode
+		State
+		Summary
 		DateListed
 		IsRecruiter
-		IsActive
-		IntermediatePhase
+		IntermediatePhaseID
+		Title(IntermediatePhase)
 		InterviewCount
-		OfferPhase
+		OfferPhaseID
+		Title(OfferPhase)
 		OfferedSalary
 		RejectionStatus
 
@@ -129,7 +136,6 @@ UPDATE
 
 	internal set(s):
 
-		IsActive
 		RejectionStatus
 
 (3) BumpInterviewCount
@@ -141,6 +147,24 @@ UPDATE
 	internal set(s):
 
 		InterviewCount
+
+(4) GotInterview
+	input(s):
+
+		JobID
+
+	internal set(s):
+
+		IntermediatePhaseID
+
+(5) ChangeOfferStatus
+	input(s):
+
+		JobID
+
+	internal set(s):
+
+		OfferPhaseID
 
 ======================
 DELETE
