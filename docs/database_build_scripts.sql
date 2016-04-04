@@ -84,6 +84,7 @@ JobID					int					IDENTITY(1,1)	PRIMARY KEY,
 CompanyID				int,
 RecruiterID				int,
 Title					varchar(30)			not null,
+TypeID					int					not null,	-- (0)-Front End, (1)-Middle, (2)-Database, (3)-Fullstack
 Url						nvarchar(2083),					--Max allowed Url length == 2083
 CityID					int					not null,
 Summary					nvarchar(4000),
@@ -99,6 +100,7 @@ RejectionStatus			bit,							-- (0)-Not rejected, (1)-Rejected
 
 CONSTRAINT FK_CompanyID				FOREIGN KEY (CompanyID)				REFERENCES	Company				(CompanyID),
 CONSTRAINT FK_RecruiterID			FOREIGN KEY (RecruiterID)			REFERENCES	Recruiter			(RecruiterID),
+CONSTRAINT FK_TypeID				FOREIGN KEY (TypeID)				REFERENCES	Type				(TypeID),
 CONSTRAINT FK_LocationID			FOREIGN KEY (CityID)				REFERENCES	Cities				(CityID),
 CONSTRAINT FK_IntermediatePhaseID	FOREIGN KEY (IntermediatePhaseID)	REFERENCES	IntermediatePhase	(IntermediatePhaseID),
 CONSTRAINT FK_OfferPhaseID			FOREIGN KEY (OfferPhaseID)			REFERENCES	OfferPhase			(OfferPhaseID)
