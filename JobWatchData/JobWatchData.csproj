@@ -44,8 +44,8 @@
     <Compile Include="Models\IntermediatePhase.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\Language.cs" />
-    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\OfferPhase.cs" />
+    <Compile Include="Models\Recruiter.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
