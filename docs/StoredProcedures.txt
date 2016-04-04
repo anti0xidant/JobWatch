@@ -16,8 +16,8 @@ CREATE
 		RecruiterID
 		Title
 		Url
-		LocationID
-		Description
+		CityID
+		Summary
 		DateListed
 		DateApplied
 		IsRecruiter

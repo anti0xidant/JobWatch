@@ -86,7 +86,7 @@ RecruiterID				int,
 Title					varchar(30)			not null,
 Url						nvarchar(2083),					--Max allowed Url length == 2083
 CityID					int					not null,
-Description				nvarchar(4000),
+Summary					nvarchar(4000),
 DateListed				datetime,
 DateApplied				datetime			not null,
 IsRecruiter				bit					not null,	-- (0)-Not recruiter job, (1)-Is recruiter job
@@ -95,11 +95,11 @@ IntermediatePhaseID		int					not null,	-- (0)-Awaiting Callback, (1)-Interview P
 InterviewCount			int					not null,
 OfferPhaseID			int					not null,	-- (0)-Not yet reached, (1)-Offered but deciding, (2)-Offered but pass, (3)-Accepted offer 
 OfferedSalary			smallmoney,
-RejectionStatus			bit								-- (0)-Not rejected, (1)-Rejected
+RejectionStatus			bit,							-- (0)-Not rejected, (1)-Rejected
 
 CONSTRAINT FK_CompanyID				FOREIGN KEY (CompanyID)				REFERENCES	Company				(CompanyID),
 CONSTRAINT FK_RecruiterID			FOREIGN KEY (RecruiterID)			REFERENCES	Recruiter			(RecruiterID),
-CONSTRAINT FK_LocationID			FOREIGN KEY (LocationID)			REFERENCES	Location			(LocationID),
+CONSTRAINT FK_LocationID			FOREIGN KEY (CityID)				REFERENCES	Cities				(CityID),
 CONSTRAINT FK_IntermediatePhaseID	FOREIGN KEY (IntermediatePhaseID)	REFERENCES	IntermediatePhase	(IntermediatePhaseID),
 CONSTRAINT FK_OfferPhaseID			FOREIGN KEY (OfferPhaseID)			REFERENCES	OfferPhase			(OfferPhaseID)
 )

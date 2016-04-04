@@ -13,8 +13,8 @@ Jobs:
 -Title (string)
 -TypeID (int)
 -URL (string)
--LocationID (int)
--Description (string)
+-CityID (int)
+-Summary (string)
 -Date Listed (datetime)
 -Date Applied (datetime)
 -IsActive (bool)
@@ -36,10 +36,14 @@ Type:
 	2. Database
 	3. FullStack
 
-Location:
--LocationID (int)
+Cities
+-CityID(int)
 -City (string)
--State (string)
+-StateCode (string)
+
+States
+-StateCode (char)
+-State (varchar)
 
 IntermediatePhase:
 -IntermediatePhaseID (int)
