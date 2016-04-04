@@ -4,7 +4,7 @@ JobWatch
 ======================
 CREATE 	-	3
 READ 	- 	2
-UPDATE 	- 	3
+UPDATE 	- 	5
 DELETE 	-	1
 ======================
 CREATE
@@ -15,6 +15,7 @@ CREATE
 		CompanyID
 		RecruiterID
 		Title
+		TypeID
 		Url
 		CityID
 		Summary
@@ -65,6 +66,7 @@ READ
 		CompanyName
 		CompanyUrl
 		Title
+		Type
 		Url
 		City
 		StateCode
@@ -88,6 +90,7 @@ READ
 		CompanyName
 		CompanyUrl
 		Title
+		Type
 		Url
 		City
 		StateCode
@@ -111,21 +114,17 @@ UPDATE
 	input(s):
 
 		JobID
-		CompanyName
-		CompanyUrl
+		CompanyID
 		Title
+		TypeID
 		Url
-		City
-		StateCode
-		State
+		CityID
 		Summary
 		DateListed
 		IsRecruiter
 		IntermediatePhaseID
-		Title(IntermediatePhase)
 		InterviewCount
 		OfferPhaseID
-		Title(OfferPhase)
 		OfferedSalary
 		RejectionStatus
 
